@@ -1,0 +1,13 @@
+
+<header>
+  <a href="{% url 'home'%}">Home</a>
+  <a href="{% url 'about'%}">about</a>
+</header>
+
+{%block content%}
+
+ {% comment %} here our block content is overwritten by child 
+ block content(by home and about page content) 
+ {% endcomment %}
+
+{%endblock content%}
